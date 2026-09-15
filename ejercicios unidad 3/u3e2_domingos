@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuantos días faltan para mi cumple.</title>
+</head>
+<body>
+
+  <h1>Cuenta atrás para mi cumpleaños</h1>
+  <p id="resultado"></p>
+
+  <script>
+
+    // Fecha de hoy
+    const hoy = new Date();
+
+    // Fecha de mi cumpleños (4 de Marzo, mes 2 porque enero = 0)
+    const cumpleanos = new Date(hoy.getFullYear(), 2, 4);
+
+    // Si mi cumple ya pasó este año, lo pasamos al año siguiente
+    if (hoy > cumpleanos) {
+      cumpleanos.setFullYear(hoy.getFullYear() + 1);
+    }
+  </script>
+</body>
+</html>

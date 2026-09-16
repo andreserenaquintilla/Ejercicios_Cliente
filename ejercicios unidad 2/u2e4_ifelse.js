@@ -1,8 +1,9 @@
 // Ejercicio: u2e4_ifelse
 // Nombre: Andrés Serena Quintilla
 
-// 1 - Declaración de variables numéricas
-var edad_usuario = parseInt(prompt("Introduce tu edad"));
+// 1 - Declaramos la variable que saldrá al escribir la edad
+let edad_usuario = parseInt(prompt("Introduce tu edad"));
+
 // 2 - Estructura If Else
 if (edad_usuario < 0) {
     alert("No se puede introducir una edad negativa");

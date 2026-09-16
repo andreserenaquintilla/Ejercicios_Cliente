@@ -6,6 +6,7 @@ let esHoraEnPunto = true;
 
 // 2 - Bucle exterior: recorre las horas de 9 a 21
 for (let hora = 9; hora <= 21; hora++) {
+    
     // Bucle interior: se repite 2 veces por cada hora (una para :00 y otra para :30)
     for (let vuelta = 0; vuelta < 2; vuelta++){
         if (esHoraEnPunto) {

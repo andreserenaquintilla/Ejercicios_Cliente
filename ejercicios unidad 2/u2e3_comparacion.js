@@ -19,7 +19,7 @@ alert("La operación 10==10 es " + operacion1);                  // Este alert m
 alert("La operación 10===10 es " + operacion2);                 // Este alert muestra el resultado de la operación 10===10, que es true
 alert("La operación 10===10.0 es " + operacion3);               // Este alert muestra el resultado de la operación 10===10.0, que es true
 alert("La operación 'Laura'=='laura' es " + operacion4);        // Este alert muestra el resultado de la operación 'Laura'=='laura', que es false
-alert("La operación 'Laura'>'laura' es " + operacion5);         // Este alert muestra el resultado de la operación 'Laura'>'laura', que es false
+alert("La operación 'Laura'>'laura' es " + operacion5);         // Este alert muestra el resultado de la operación 'Laura'>'laura', // Da false porque JS compara por código de carácter, y la L mayúscula vale menos que la l minúscula".
 alert("La operación 'Laura'<'laura' es " + operacion6);         // Este alert muestra el resultado de la operación 'Laura'<'laura', que es true
 alert("La operación '123'==123 es " + operacion7);              // Este alert muestra el resultado de la operación '123'==123, que es true
 alert("La operación '123'===123 es " + operacion8);             // Este alert muestra el resultado de la operación '123'===123, que es false

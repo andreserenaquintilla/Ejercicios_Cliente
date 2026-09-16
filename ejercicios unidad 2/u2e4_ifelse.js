@@ -2,4 +2,20 @@
 // Nombre: Andrés Serena Quintilla
 
 // 1 - Declaración de variables numéricas
-var respuesta = ;        // Rango de edad para niño
+var edad_usuario = parseInt(prompt("Introduce tu edad"));
+// 2 - Estructura If Else
+if (edad_usuario < 0) {
+    alert("No se puede introducir una edad negativa");
+}
+else if (edad_usuario >= 0 && edad_usuario <= 12) {
+    alert("Eres un niño");
+}
+else if (edad_usuario >= 13 && edad_usuario <= 26) {
+    alert("Eres un Joven");
+}
+else if (edad_usuario >= 27 && edad_usuario <= 59) {
+    alert("Eres un Adulto");
+}
+else if (edad_usuario >= 60) {
+    alert("Eres un Jubilado");
+}

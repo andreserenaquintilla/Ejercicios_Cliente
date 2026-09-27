@@ -1,4 +1,4 @@
-// Ejercicio: u3e2_domingos
+// Ejercicio: u3e3_formato fechas
 // Autor: Andrés Serena Quintilla
 
 // 1. Declaramos la variable del dia de hoy

@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 10 Window</title>
 </head>
-<body>
+<!-- Le doy 2000px de alto al body para que la página tenga scroll y se puedan probar los dos últimos botones -->
+<body style="height: 2000px;">
+
+  <!-- Estos dos llaman a las funciones del js porque son más largos -->
+  <button onclick="abrirVentana()">Abrir ventana nueva</button>
+  <button onclick="cerrarVentana()">Cerrar ventana</button>
+
+  <!-- Estos cuatro van sobre nuevaVentana y no sobre la principal, porque los navegadores no dejan mover ni cambiar el tamaño de la ventana principal -->
+  <button onclick="nuevaVentana.moveBy(10, 10)">Mover 10px derecha y abajo</button>
+  <button onclick="nuevaVentana.moveTo(100, 100)">Mover a 100,100</button>
+  <button onclick="nuevaVentana.resizeBy(10, 10)">Aumentar 10px</button>
+  <button onclick="nuevaVentana.resizeTo(400, 200)">Tamaño 400x200</button>
+
+  <!-- En estos hace falta poner window delante, porque si no, el onclick coge el scrollTo del propio botón y no hace scroll en la página -->
+  <button onclick="window.scrollTo(0, 0)">Scroll arriba del todo</button>
+  <button onclick="window.scrollTo(0, 10)">Scroll a 10px</button>
+
   <script src="u3e10_window.js"></script>
 </body>
 </html>

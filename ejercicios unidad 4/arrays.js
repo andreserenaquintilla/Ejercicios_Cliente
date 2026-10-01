@@ -51,3 +51,13 @@ function posicionDeElemento(array, elemento) {
 function mostrarIntervalo(array, inicio, fin) {
   return array.slice(inicio, fin + 1).join(", ");
 }
+
+// Busca un objeto por su nombre y devuelve su posición, o -1 si no lo encuentra
+function posicionPorNombre(array, nombre) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].nombre === nombre) {
+      return i;
+    }
+  }
+  return -1;
+}
